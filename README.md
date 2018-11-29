@@ -11,7 +11,7 @@ wget https://github.com/jffalcao/golang-project-setup/archive/master.zip
 unzip master.zip
 rm master.zip
 ls 
-mv node-project-setup-master/ golang-project-setup-test
+mv golang-project-setup-master/ golang-project-setup-test
 cd golang-project-setup-test/
 code .
 ```
