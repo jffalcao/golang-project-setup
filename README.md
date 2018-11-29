@@ -11,7 +11,7 @@ wget https://github.com/jffalcao/golang-project-setup/archive/master.zip
 unzip master.zip
 rm master.zip
 ls 
-mv node-project-setup-master/ golang-project-setup-test
+mv golang-project-setup-master/ golang-project-setup-test
 cd golang-project-setup-test/
 code .
 ```
@@ -26,7 +26,7 @@ docker build --rm -t <Golang-project>:latest .
 docker images
 docker run -v $(pwd):/opt -p 3000:3000 -it <node-project>
 build test-golang.go
-./test-golang.go
+./opt
 ```
 - If needed use this command to attach or restart teh container
 ```
