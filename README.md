@@ -30,7 +30,7 @@ docker images
 ```
 sudo chmod +x runcontainer.sh
 ./runcontainer.sh
-build test-golang-project-setup.go
+go build test-golang-project-setup.go
 ./GolangProject
 ```
 - If needed use this command to attach or restart therm container

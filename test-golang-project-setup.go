@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Printf("hello, world\n")
+	fmt.Printf("Golang project setup is succesul! Start Coding !!!\n")
 }
