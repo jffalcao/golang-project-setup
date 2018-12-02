@@ -15,8 +15,9 @@ mv golang-project-setup-master/ golang-project-setup-test
 cd golang-project-setup-test/
 code .
 ```
-- Modify MOTD File replacing placeholder with your projects name
-- Modify Dockerfile and replacing value of PS1 with your projects idendtifier
+- Modify **Dockerfile** replacing placeholder **GolangProject** with your project name.
+- Modify **MOTD** File replacing placeholder **GolangProject** with your projects name
+- Modify **runcontainer.sh** replacing the placeholder with **GolangProject** with your projects name
 
 ## Working with Docker
 
@@ -24,11 +25,15 @@ code .
 ```
 docker build --rm -t <Golang-project>:latest .
 docker images
-docker run -v $(pwd):/opt -p 3000:3000 -it <node-project>
-build test-golang.go
-./opt
 ```
-- If needed use this command to attach or restart teh container
+-Running the container (If necessary make runcontainer.sh executable)
+```
+sudo chmod +x runcontainer.sh
+./runcontainer.sh
+build test-golang-project-setup.go
+./GolangProject
+```
+- If needed use this command to attach or restart therm container
 ```
 docker ps -a
 docker attach <containerID>
