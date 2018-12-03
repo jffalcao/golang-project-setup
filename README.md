@@ -6,7 +6,7 @@ This project contains the intial files to startup a Golang project.
 
 - Copy files to your project workspace
 ```
-cd ~jfrlabs/go
+cd ~/jfrflabs/go
 wget https://github.com/jffalcao/golang-project-setup/archive/master.zip
 unzip master.zip
 mv golang-project-setup-master/ GolangProject
