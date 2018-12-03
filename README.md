@@ -6,18 +6,14 @@ This project contains the intial files to startup a Golang project.
 
 - Copy files to your project workspace
 ```
-cd /go
-# wget https://github.com/jffalcao/golang-project-setup/archive/master.zip
-# unzip master.zip
-# rm master.zip
-# ls 
-# mv golang-project-setup-master/ golang-project-setup-test
-
-unzip https://github.com/jffalcao/golang-project-setup/archive/master.zip /go
-# cd golang-project-setup-test/
+cd ~jfrlabs/go
+wget https://github.com/jffalcao/golang-project-setup/archive/master.zip
+unzip master.zip
+mv golang-project-setup-master/ GolangProject
+rm master.zip
+cd GolangProject
 code .
 ```
-- Modify **Dockerfile** replacing placeholder **GolangProject** with your project name.
 - Modify **MOTD** File replacing placeholder **GolangProject** with your projects name
 - Modify **runcontainer.sh** replacing the placeholder with **GolangProject** with your projects name
 
@@ -25,15 +21,16 @@ code .
 
 - Building the container
 ```
-docker build --rm -t <Golang-project>:latest .
+docker build --rm -t Golang-project:latest .
 docker images
 ```
 -Running the container (If necessary make runcontainer.sh executable)
 ```
 sudo chmod +x runcontainer.sh
 ./runcontainer.sh
-go build test-golang-project-setup.go
-./test-golang-project-setup
+cd src/hello
+go build
+./hello
 ```
 - If needed use this command to attach or restart therm container
 ```
