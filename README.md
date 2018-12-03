@@ -6,13 +6,15 @@ This project contains the intial files to startup a Golang project.
 
 - Copy files to your project workspace
 ```
-cd ~/jfrflabs
-wget https://github.com/jffalcao/golang-project-setup/archive/master.zip
-unzip master.zip
-rm master.zip
-ls 
-mv golang-project-setup-master/ golang-project-setup-test
-cd golang-project-setup-test/
+cd /go
+# wget https://github.com/jffalcao/golang-project-setup/archive/master.zip
+# unzip master.zip
+# rm master.zip
+# ls 
+# mv golang-project-setup-master/ golang-project-setup-test
+
+unzip https://github.com/jffalcao/golang-project-setup/archive/master.zip /go
+# cd golang-project-setup-test/
 code .
 ```
 - Modify **Dockerfile** replacing placeholder **GolangProject** with your project name.
